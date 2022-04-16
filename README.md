@@ -1,6 +1,9 @@
 # esphome-projects
 
-This is a collection of home projects done with the wemos d1 mini.
+This is a collection of home projects done with the wemos d1 mini, this includes fully working:
+ - [weather (temp, humidity and air pressure) sensor](weather-sensor.md)
+ - 433MHz doorbell sensor
+ - smart light switches
 
 
 
