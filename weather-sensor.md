@@ -12,12 +12,12 @@ Ingredients:
 # Wiring it up: 
 
 
-BME pin = wemos d1 mini pin
-
-VCC = 3.3V
-GND = GND
-SCL = SCL (D1)
-SDA = SDA (D2)
+| BME pin | wemos d1 mini pin|
+|--|--|
+| VCC | 3.3V |
+| GND | GND |
+| SCL | SCL (D1) |
+| SDA | SDA (D2) |
 
 
 
