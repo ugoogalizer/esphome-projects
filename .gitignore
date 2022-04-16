@@ -1,6 +1,11 @@
 #Custom
 *.code-workspace
 secrets.yaml
+Scripts
+Inclue
+pyvenv.cfg
+*.json
+.esphome/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

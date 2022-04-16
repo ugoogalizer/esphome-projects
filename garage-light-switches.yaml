@@ -1,0 +1,160 @@
+substitutions:
+  device_name: garage-light-switches
+  friendly_name: "Garage Lights"
+  device_ip: 192.168.2.234
+
+#################################
+
+
+
+esphome:
+  name: ${device_name}
+  platform: ESP8266
+  board: esp01_1m
+  esp8266_restore_from_flash: true
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  manual_ip:
+    static_ip: ${device_ip}
+    gateway: 192.168.2.1
+    subnet: 255.255.255.0
+  
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: !secret fallback_ap_ssid
+    password: !secret fallback_ap_password
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret ha_api_password
+
+ota:
+  password: !secret ota_password
+
+# The web_server & sensor components can be removed without affecting core functionaility.
+web_server:
+  port: 80
+
+sensor:
+  - platform: wifi_signal
+    name: ${device_name} Wifi Signal Strength
+    update_interval: 60s
+  - platform: uptime
+    name: ${device_name} Uptime
+
+#################################
+
+status_led:
+  pin:
+    number: GPIO0
+    inverted: True
+
+output:
+  # 1st button
+  - platform: gpio
+    pin: GPIO5
+    id: relay1
+
+  # 2nd button
+  - platform: gpio
+    pin: GPIO14
+    id: relay2
+
+  # 3rd button
+  - platform: gpio
+    pin: GPIO12
+    id: relay3
+
+  # 4th button
+  - platform: gpio
+    pin: GPIO15
+    id: relay4
+
+light:
+  # 1st button
+  - platform: binary
+    name: "Garage Rear Sensor Light"
+    output: relay1
+    id: light1
+
+  # 2nd button
+  - platform: binary
+    name: "Garage Small Light"
+    output: relay2
+    id: light2
+
+  # 3rd button
+  - platform: binary
+    name: "Garage Big Light"
+    output: relay3
+    id: light3
+
+  # 4th button
+  - platform: binary
+    name: "Garage Door Switch"
+    output: relay4
+    id: light4
+
+# Buttons
+binary_sensor:
+  # 1st button
+  - platform: gpio
+    pin:
+      number: GPIO16
+      mode: INPUT_PULLUP 
+      inverted: True
+    name: "${friendly_name} 1st Button"
+    #toggle relay on push
+    on_press:
+      - light.toggle: light1
+
+  # 2nd button
+  - platform: gpio
+    pin:
+      number: GPIO4
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${friendly_name} 2nd Button"
+    #toggle relay on push
+    on_press:
+      - light.toggle: light2
+
+  # 3rd button
+  - platform: gpio
+    pin:
+      number: GPIO3
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${friendly_name} 3rd Button"
+    #toggle relay on push
+    on_press:
+      - light.toggle: light3
+
+  # 4th button
+  - platform: gpio
+    pin:
+      number: GPIO13
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "${friendly_name} 4th Button"
+    #toggle relay on push
+    on_press:
+      - light.toggle: light4
+
+switch:
+  - platform: restart
+    name: "${friendly_name} REBOOT"
+    
+    
+# Sync time with Home Assistant.
+time:
+  - platform: homeassistant
+    id: ha_time
