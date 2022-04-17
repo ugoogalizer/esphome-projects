@@ -1,11 +1,11 @@
 # esphome-projects
 
-This is a collection of home projects done with the wemos d1 mini, this includes fully working:
+This is a collection of home projects done with the wemos d1 mini (which uses the ESP8266). Projects I've been successful in implmenting are :
  - [weather (temp, humidity and air pressure) sensor](weather-sensor.md)
  - [433MHz doorbell sensor](doorbell-sensor.md)
  - smart light switches
 
-
+Great wiring diagrams and pin details on the Wemos D1 mini can be found at: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/
 
 # Installing / Configuring esphome
 
@@ -42,7 +42,7 @@ esphome run <file>.yaml
   :: for example:
   esphome run doorbell-sensor.yaml
   esphome run weather-sensor.yaml
-  esphome run garage-light-switches.yaml
+  esphome run light-switches.yaml
 
 :: to view the logs of a firmware: 
 esphome logs <file>.yaml
@@ -50,7 +50,7 @@ esphome logs <file>.yaml
   :: for example:
   esphome logs doorbell-sensor.yaml
   esphome logs weather-sensor.yaml
-  esphome logs garage-light-switches.yaml
+  esphome logs light-switches.yaml
 
 :: leave the venv
 deactivate

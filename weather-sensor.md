@@ -20,10 +20,15 @@ Project to create a temperature, humidity and air pressure sensor using the BME2
 | SDA | SDA (D2) |
 
 With a simple diagram as follows: 
+
 ![Weather sensor wiring diagram](./images/weather-sensor-wiring.jpg)
 
 After I breadboarded it for a bit, I then soldered it together: 
 
 ![Weather sensor soldered onto a protoboard](./images/weather-sensor-board.jpg)
 
-Then flashed the wemos with esphome, for the yaml, see [weather-sensor.yaml](/weather-sensor.yaml)
+# Flashing with esphome
+
+See the instructions on the [main page](/README.md) on how to flash.  Use the [weather-sensor.yaml](/weather-sensor.yaml) file for this.
+
+You can then add the device into Home Assistant, which the moment I said I had a new Esphome device, Home Assistant had already found it and I only had to enter in a password.
