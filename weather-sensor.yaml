@@ -1,8 +1,8 @@
 substitutions:
-  location_name: "Workshop"
-  device_name: workshop-weather-sensor
-  friendly_name: "Workshop Weather Sensor"
-  device_ip: 192.168.2.242
+  location_name: "Rumpus"
+  device_name: rumpus-weather-sensor
+  friendly_name: "Rumpus Weather Sensor"
+  device_ip: 192.168.2.243
 
 #################################
 
