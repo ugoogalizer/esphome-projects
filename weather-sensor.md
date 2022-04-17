@@ -21,4 +21,4 @@ Project to create a temperature, humidity and air pressure sensor.
 
 
 
-Then flashed the wemos with esphome, for the yaml, see [weather-sensor.yaml](/humidity-sensor.yaml)
+Then flashed the wemos with esphome, for the yaml, see [weather-sensor.yaml](/weather-sensor.yaml)
