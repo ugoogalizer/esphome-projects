@@ -20,10 +20,10 @@ Project to create a temperature, humidity and air pressure sensor using the BME2
 | SDA | SDA (D2) |
 
 With a simple diagram as follows: 
-![Weather sensor wiring diagram](./images/weather-sensor-wiring.jpg)
+![Weather sensor wiring diagram](./images/weather-sensor-wiring.jpg =500x)
 
 After I breadboarded it for a bit, I then soldered it together: 
 
-![Weather sensor soldered onto a protoboard](./images/weather-sensor-board.jpg)
+![Weather sensor soldered onto a protoboard](./images/weather-sensor-board.jpg =500x)
 
 Then flashed the wemos with esphome, for the yaml, see [weather-sensor.yaml](/weather-sensor.yaml)
