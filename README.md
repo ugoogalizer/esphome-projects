@@ -2,7 +2,7 @@
 
 This is a collection of home projects done with the wemos d1 mini, this includes fully working:
  - [weather (temp, humidity and air pressure) sensor](weather-sensor.md)
- - 433MHz doorbell sensor
+ - [433MHz doorbell sensor](doorbell-sensor.md)
  - smart light switches
 
 
