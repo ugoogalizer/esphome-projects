@@ -6,7 +6,7 @@ This is an almost direct clone from https://www.esphome-devices.com/devices/DETA
  - [1 Gang](https://www.bunnings.com.au/deta-grid-connect-smart-single-gang-touch-light-switch_p0098811)
  - [2 Gang](https://www.bunnings.com.au/deta-grid-connect-smart-double-gang-touch-light-switch_p0098812)
  - [3 Gang](https://www.bunnings.com.au/deta-grid-connect-smart-triple-gang-touch-light-switch_p0161014)
- - [4 Gang](https://www.bunnings.com.au/deta-grid-connect-smart-quad-gang-touch-light-switch_p0161015)
+ - [4 Gang](https://www.bunnings.com.au/deta-grid-connect-smart-quad-gang-touch-light-switch_p0161015) This is what I got (example screenshot shown below)
 
 ![4 Gang Data Smart Light Switch](./images/deta-4gang.jpg)
 
@@ -20,5 +20,5 @@ Extra guidance also came from: https://blog.mikejmcguire.com/2020/05/22/deta-gri
 
 
 
-Then [flashed](/README.md) the wemos with esphome, for the yaml, see [doorbell-sensor.yaml](/doorbell-sensor.yaml)
+Then [flashed](/README.md) the wemos with esphome, for the yaml, see [light-switches.yaml](/light-switches.yaml)
 
