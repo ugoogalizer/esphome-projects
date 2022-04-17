@@ -24,4 +24,8 @@ Transmitter
 |--|--|
 | TBC | TBC |
 
-Then flashed the wemos with esphome, for the yaml, see [wemosd1_doorbell_sensor.yaml](/wemosd1_doorbell_sensor.yaml)
+Then flashed the wemos with esphome, for the yaml, see [doorbell-sensor.yaml](/doorbell-sensor.yaml)
+
+# Getting out codes
+
+Esphome had some good guides, but effectively I watched the logs in esphome with `esphome logs doorbell-sensor.yaml` and determined what signal the doorbell was sending through.

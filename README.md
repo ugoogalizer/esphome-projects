@@ -40,16 +40,16 @@ pip install --upgrade esphome
 esphome run <file>.yaml
 
   :: for example:
-  esphome run wemosd1_doorbell_sensor.yaml
-  esphome run humidity-sensor.yaml
+  esphome run doorbell-sensor.yaml
+  esphome run weather-sensor.yaml
   esphome run garage-light-switches.yaml
 
 :: to view the logs of a firmware: 
 esphome logs <file>.yaml
 
   :: for example:
-  esphome logs wemosd1_doorbell_sensor.yaml
-  esphome logs humidity-sensor.yaml
+  esphome logs doorbell-sensor.yaml
+  esphome logs weather-sensor.yaml
   esphome logs garage-light-switches.yaml
 
 :: leave the venv
