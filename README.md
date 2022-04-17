@@ -3,7 +3,7 @@
 This is a collection of home projects done with the wemos d1 mini (which uses the ESP8266). Projects I've been successful in implmenting are :
  - [weather (temp, humidity and air pressure) sensor](weather-sensor.md)
  - [433MHz doorbell sensor](doorbell-sensor.md)
- - smart light switches
+ - [smart light switches](light-switches.md)
 
 Great wiring diagrams and pin details on the Wemos D1 mini can be found at: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/
 
